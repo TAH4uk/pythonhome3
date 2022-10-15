@@ -10,6 +10,5 @@ def fibonacci(n):
 
 data = str(list(fibonacci(fib)))
 
-file = open("fib.txt", "w")
-file.writelines(data)
-file.close
+with open("fib.txt", "w") as file:
+    file.writelines(data)
